@@ -17,6 +17,14 @@ app.add_middleware(
 class QueryRequest(BaseModel):
     query: str
 
+
+@app.get("/")
+def root():
+    return {
+        "message": "SHL Assessment Recommender API",
+        "endpoints": ["/health", "/recommend", "/docs"],
+    }
+
 @app.get("/health")
 def health():
     return {"status": "healthy"}
