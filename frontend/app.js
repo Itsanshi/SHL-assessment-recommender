@@ -9,8 +9,10 @@ async function getRecommendations() {
 
   output.innerHTML = "Loading...";
 
+  const API_URL = "https://shl-assessment-recommender-1-i99s.onrender.com/recommend";
+
   try {
-    const response = await fetch("http://localhost:8000/recommend", {
+    const response = await fetch(API_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ query: query })
