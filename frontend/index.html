@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHL Assessment Recommender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SHL Assessment Recommender</h1>
+            <p>Get personalized assessment recommendations for your job roles</p>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <label for="jobDescription">Job Description:</label>
+                <textarea id="jobDescription" rows="8" placeholder="Enter job description here..."></textarea>
+                <button id="recommendBtn">Get Recommendations</button>
+            </div>
+            
+            <div class="results-section" id="results">
+                <h2>Recommended Assessments</h2>
+                <div id="assessmentList"></div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
